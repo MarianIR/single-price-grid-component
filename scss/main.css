@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: hsl(204deg, 43%, 93%);
+}
+
+.main-section {
+  width: 90%;
+  margin: 2rem auto;
+}
+@media (min-width: 768px) {
+  .main-section {
+    margin-top: 10rem;
+    max-width: 120rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0;
+  }
+}
+.main-section .join-community {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .main-section .join-community {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+}
+.main-section .join-community .main-header {
+  margin: 2rem;
+  font-size: clamp(2rem, 7vw, 4rem);
+  color: hsl(179deg, 62%, 43%);
+}
+.main-section .join-community .second-header {
+  margin: 0 2rem 2rem;
+  color: hsl(71deg, 73%, 54%);
+  font-size: clamp(1.7rem, 7vw, 3rem);
+}
+.main-section .join-community .paragraph {
+  margin: 0 2rem 2rem;
+  font-size: clamp(1.6rem, 7vw, 2.5rem);
+  color: hsl(218deg, 22%, 67%);
+}
+.main-section .monthly-sub {
+  width: 100%;
+  background-color: hsl(179deg, 62%, 43%);
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .main-section .monthly-sub {
+    grid-row: 2/2;
+    grid-column: 1/2;
+  }
+}
+.main-section .monthly-sub .third-header {
+  padding: 2rem;
+  font-size: clamp(1.7rem, 7vw, 3rem);
+  color: #fff;
+}
+.main-section .monthly-sub .price {
+  font-size: 4rem;
+  color: #fff;
+  margin: 0 2rem 2rem;
+  display: flex;
+  align-items: center;
+}
+.main-section .monthly-sub .price .per-month {
+  padding: 2rem;
+  font-size: 1.6rem;
+  color: hsl(204deg, 43%, 93%);
+}
+.main-section .monthly-sub .full-access {
+  margin: 0 2rem 2rem;
+  font-size: clamp(1.6rem, 7vw, 2.5rem);
+  color: hsl(204deg, 43%, 93%);
+}
+.main-section .monthly-sub .sign-up {
+  display: block;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1.8rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(71deg, 73%, 54%);
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.86);
+  cursor: pointer;
+}
+.main-section .why-us {
+  width: 100%;
+  background-color: hsl(179deg, 51%, 56%);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+@media (min-width: 768px) {
+  .main-section .why-us {
+    grid-row: 2/2;
+    grid-column: 2/2;
+    border-radius: 0 0 0.5rem 0;
+  }
+}
+.main-section .why-us .why-us-header {
+  padding: 2rem;
+  font-size: clamp(1.7rem, 7vw, 3rem);
+  color: #fff;
+}
+.main-section .why-us .paragraph {
+  margin: 0 2rem 2rem;
+  font-size: clamp(1.6rem, 7vw, 2.5rem);
+  color: hsl(204deg, 43%, 93%);
+  padding-bottom: 2rem;
+}
+
+.attribution {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.attribution a {
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

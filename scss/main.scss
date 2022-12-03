@@ -1,0 +1,122 @@
+@import "variables", "reset";
+
+body {
+  width: 100%;
+  background-color: $neutralColor1;
+}
+
+.main-section {
+  width: 90%;
+  margin: 2rem auto;
+  @media (min-width: 768px) {
+    margin-top: 10rem;
+    max-width: 120rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0;
+  }
+  .join-community {
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    @media (min-width: 768px) {
+      grid-row: 1/2;
+      grid-column: 1/3;
+    }
+    .main-header {
+      margin: 2rem;
+      font-size: clamp(2rem, 7vw, 4rem);
+      color: $primaryColor1;
+    }
+    .second-header {
+      margin: 0 2rem 2rem;
+      color: $primaryColor2;
+      font-size: clamp(1.7rem, 7vw, 3rem);
+    }
+    .paragraph {
+      margin: 0 2rem 2rem;
+      font-size: clamp($fontSize, 7vw, 2.5rem);
+      color: $neutralColor2;
+    }
+  }
+  .monthly-sub {
+    width: 100%;
+    background-color: $primaryColor1;
+    padding-bottom: 2rem;
+    @media (min-width: 768px) {
+      grid-row: 2/2;
+      grid-column: 1/2;
+    }
+    .third-header {
+      padding: 2rem;
+      font-size: clamp(1.7rem, 7vw, 3rem);
+      color: #fff;
+    }
+    .price {
+      font-size: 4rem;
+      color: #fff;
+      margin: 0 2rem 2rem;
+      display: flex;
+      align-items: center;
+      .per-month {
+        padding: 2rem;
+        font-size: $fontSize;
+        color: $neutralColor1;
+      }
+    }
+    .full-access {
+      margin: 0 2rem 2rem;
+      font-size: clamp($fontSize, 7vw, 2.5rem);
+      color: $neutralColor1;
+    }
+    .sign-up {
+      display: block;
+      width: 90%;
+      margin: 2rem auto;
+      padding: 1.8rem 0;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: $primaryColor2;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #fff;
+      box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.86);
+      cursor: pointer;
+    }
+  }
+  .why-us {
+    width: 100%;
+    background-color: $primaryColor3;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    @media (min-width: 768px) {
+      grid-row: 2/2;
+      grid-column: 2/2;
+      border-radius: 0 0 0.5rem 0;
+    }
+    .why-us-header {
+      padding: 2rem;
+      font-size: clamp(1.7rem, 7vw, 3rem);
+      color: #fff;
+    }
+    .paragraph {
+      margin: 0 2rem 2rem;
+      font-size: clamp($fontSize, 7vw, 2.5rem);
+      color: $neutralColor1;
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.attribution {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  a {
+    cursor: pointer;
+  }
+}
